@@ -1,0 +1,30 @@
+# Original game media (user-owned, never committed)
+*.iso
+*.ISO
+*.cue
+*.bin
+/I SPY */
+/I Spy */
+
+# Installed game packs (generated from the user's discs)
+/games/*
+!/games/README.md
+
+# Local tooling (portable Godot, extractor binaries)
+/.tools/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Godot
+engine/.godot/
+engine/export/
+*.import.tmp
+
+# Misc
+*.log
+.DS_Store
+Thumbs.db

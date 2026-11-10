@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="I SPY Engine"
+config/description="Modern replacement engine for the Scholastic I SPY Director titles."
+run/main_scene="res://scenes/launcher.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+run/low_processor_mode=true
+
+[autoload]
+
+Settings="*res://autoload/settings.gd"
+Library="*res://autoload/library.gd"
+Assets="*res://autoload/assets.gd"
+Saves="*res://autoload/saves.gd"
+Installer="*res://autoload/installer.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=960
+window/size/resizable=true
+window/stretch/mode="disabled"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=1
